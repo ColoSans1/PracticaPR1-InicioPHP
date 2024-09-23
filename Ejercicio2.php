@@ -10,7 +10,6 @@ switch ($dia) {
         break;
     case 3:
         echo "El número $dia corresponde a Miércoles.";
-        break;
     case 4:
         echo "El número $dia corresponde a Jueves.";
         break;
