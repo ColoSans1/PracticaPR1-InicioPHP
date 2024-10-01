@@ -1,5 +1,5 @@
 <?php
-$tirada = rand(1, 6);
+$tirada = rand(1, max: 6);
 
 switch ($tirada) {
     case 1:
@@ -31,6 +31,7 @@ switch ($tirada) {
         $numero_letras = "Error";
         break;
 }
+
 
 echo "Tirada: $tirada ($numero_letras)<br>";
 echo "La cara opuesta del dado es: $cara_opuesta<br>";
