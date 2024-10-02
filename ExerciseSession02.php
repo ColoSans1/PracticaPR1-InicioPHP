@@ -3,6 +3,7 @@ session_start();
 
 if (!isset($_SESSION['array'])) {
     $_SESSION['array'] = [10, 20, 30]; 
+}
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['modificar'])) {
@@ -60,6 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <?php if (isset($promedio)): ?>
         <p class="promedio">Promedio: <?php echo number_format($promedio, 2); ?></p>
-    <?php endif; ?>
+    <?php endif; 
+    ?>
 </body>
 </html>
